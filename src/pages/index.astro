@@ -1,15 +1,13 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="David Castellanos">
+	<main class="snap-y snap-mandatory relative w-full h-screen overflow-auto">
+		<Header />
+		<section class="snap-center">
+			
+		</section>
+	</main>
+</BaseLayout>
