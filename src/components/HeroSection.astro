@@ -1,11 +1,12 @@
 ---
-import Section from "../layouts/SectionLayout.astro"
+import SectionLayout from "../layouts/SectionLayout.astro"
 import GradientText from "./GradientText.astro";
 import GitHub from "./GitHub.astro";
 import LinkedIn from "./LinkedIn.astro";
+import AngleDown from "./AngleDown.astro";
 ---
-<Section>
-  <div class="xl:flex xl:items-center xl:justify-center xl:gap-6">
+<SectionLayout>
+  <div class="xl:flex xl:items-center xl:justify-center xl:gap-8">
     <div class="flex items-center justify-center p-8 md:shrink-0 xl:order-last">
       <img 
       src="https://unavatar.io/davidcdev" 
@@ -13,10 +14,13 @@ import LinkedIn from "./LinkedIn.astro";
       class="h-40 w-40 dark:border-slate-100 dark:border-4 md:h-60 md:w-60 rounded-tl-large md:rounded-tl-extraLarge rounded-br-large md:rounded-br-extraLarge object-fit-cover"
       />
     </div>
-    <div class="p-8 space-y-20">
+    <div class="p-8 space-y-10">
       <div>
-        <h1 class="text-2xl md:text-4xl xl:text-6xl font-bold text-slate-800 dark:text-slate-200">
-          David Castellanos
+        <p class="xl:text-left text-xl md:text-2xl xl:text-4xl font-bold text-slate-800 dark:text-slate-200">
+          Hi!
+        </p>
+        <h1 class="xl:text-left text-2xl md:text-4xl xl:text-6xl font-bold text-slate-800 dark:text-slate-200">
+          I&#x27;m David 👋
         </h1>
         <GradientText title="FullStack Web Developer" align="xl:text-left" />
       </div>
@@ -26,4 +30,4 @@ import LinkedIn from "./LinkedIn.astro";
       </footer>
     </div>
   </div>
-</Section>
+</SectionLayout>
