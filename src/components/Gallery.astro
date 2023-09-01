@@ -1,23 +1,18 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+---
 
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-20">
   <div class="grid gap-4">
-      <div>
-          <img class="h-auto max-w-full rounded-lg" src="/calculator.png" alt="picture of Calculator project">
-      </div>
+    <ProjectCard image="calculator" title="Simple Calculator" link="https://simple-da-calculator.netlify.app/" stack="HTML / CSS / JavaScript" />
   </div>
   <div class="grid gap-4">
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="/productive-day.png" alt="picture of Productive Day project">
-      </div>
+    <ProjectCard image="productive-day" title="Productive Day" link="https://productive-day.netlify.app/home" stack="HTML / CSS / JavaScript / ReactJS / React router / ChakraUI" />
   </div>
   <div class="grid gap-4">
-      <div>
-          <img class="h-auto max-w-full rounded-lg" src="/dabooks.png" alt="picture of daBooks project">
-      </div>
+    <ProjectCard image="dabooks" title="daBooks" link="https://da-books.netlify.app/" stack="HTML / CSS / JavaScript / ReactJS / ChakraUI" />
   </div>
   <div class="grid gap-4">
-      <div>
-          <img class="h-auto max-w-full rounded-lg" src="/tesla-landing.png" alt="picture of tesla landing project">
-      </div>
+    <ProjectCard image="tesla-landing" title="Tesla Landing Page" link="https://tesla-landing-dcdv.netlify.app/" stack="HTML / Tailwind CSS / JavaScript / Astro" />
   </div>
 </div>
