@@ -1,10 +1,10 @@
 ---
-const { image, title, link, stack } = Astro.props;
+const { title, stack, link } = Astro.props;
 ---
 <a href={link} target="_blank">
   <div class="group relative rounded-lg items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow">
     <div>
-      <img class="h-auto max-w-full rounded-lg group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500" src=`/${image}.png` alt=`picture of ${title} project`>
+      <slot class="h-auto max-w-full rounded-lg group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500" >
     </div>
     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
     <div class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y[60%] group-hover:translate-y-0 transition-all">
