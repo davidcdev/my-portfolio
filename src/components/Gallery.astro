@@ -5,6 +5,7 @@ import productiveDay from "../images/productive-day.png";
 import dabooks from "../images/dabooks.png";
 import tesla from "../images/tesla-landing.png";
 import drums from "../images/drum-kit.png";
+import sketch from "../images/etch-a-sketch.png";
 import { Image } from "astro:assets";
 ---
 
@@ -32,6 +33,11 @@ import { Image } from "astro:assets";
   <div class="grid gap-4">
     <ProjectCard title="JS Drum Kit" link="https://js-drum-kit-online.netlify.app/" stack="HTML / CSS / JavaScript" >
       <Image src={drums} alt="JS Drum Kit Project" class="h-auto max-w-full rounded-lg group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500" />
+    </ProjectCard>
+  </div>
+  <div class="grid gap-4">
+    <ProjectCard title="Etch a Sketch!" link="https://etch-a-sketch-dvcv.netlify.app/" stack="HTML / CSS / JavaScript" >
+      <Image src={sketch} alt="Etch a Sketch Project" class="h-auto max-w-full rounded-lg group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500" />
     </ProjectCard>
   </div>
 </div>
